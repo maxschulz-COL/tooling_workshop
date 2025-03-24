@@ -32,6 +32,5 @@
         }
     },
     "forwardPorts": [3000, 8888],
-    "postCreateCommand": "echo 'Welcome to the Python Analytics tutorial environment!' > README.md",
-    "remoteUser": "appuser"
+    "postCreateCommand": "echo 'Welcome to the Python Analytics tutorial environment!' > README.md"
 } 
