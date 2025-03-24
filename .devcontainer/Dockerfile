@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 COPY --from=ghcr.io/astral-sh/uv:0.6.9 /uv /uvx /bin/
 
 # Set up a working directory
-WORKDIR /app
+WORKDIR /workspaces/tooling_workshop
 
 # Set environment variables
 ENV PYTHONUNBUFFERED=1 \

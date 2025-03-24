@@ -1,8 +1,8 @@
 {
     "name": "Python Analytics Tutorial Environment",
     "build": {
-        "dockerfile": "../Dockerfile",
-        "context": ".."
+        "dockerfile": "Dockerfile",
+        "context": "."
     },
     "features": {
         "ghcr.io/devcontainers/features/node:1": {
