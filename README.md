@@ -1,7 +1,7 @@
 # tooling_workshop
 Repo to showcase useful Python and Analytics tooling
 
-# Tutorial Project
+# Python Analytics Tutorial Project
 
 Welcome to this tutorial project! This repository is configured with GitHub Codespaces, allowing you to start coding right away without any local setup.
 
@@ -17,14 +17,8 @@ Welcome to this tutorial project! This repository is configured with GitHub Code
 
 This Codespace comes pre-configured with:
 
-- Node.js (LTS version)
+- Python 3.12
+- UV - Fast Python package installer and resolver
 - Git
 - VS Code extensions:
-  - Prettier (code formatting)
-  - ESLint (code linting)
-  - TypeScript support
-  - Live Share (for collaborative coding)
-
-## Next Steps
-
-Follow the tutorial instructions to begin building your project!
+  - Python and Jupyter support
