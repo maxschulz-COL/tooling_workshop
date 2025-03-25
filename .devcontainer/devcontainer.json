@@ -15,10 +15,13 @@
         "ms-toolsai.jupyter"
       ],
       "settings": {
-        "editor.tabSize": 4
+        "editor.tabSize": 4,
+        // "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+        "python.terminal.activateEnvironment": true,
+        "jupyter.alwaysTrustNotebooks": true,
+        "jupyter.notebookFileRoot": "${workspaceFolder}"
       }
     }
   },
-  "forwardPorts": [8888],
-  "postCreateCommand": "echo 'Welcome to the Python Analytics tutorial environment!' > README.md"
+  "forwardPorts": [8888]
 }
