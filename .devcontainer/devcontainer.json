@@ -1,36 +1,36 @@
 {
-    "name": "Python Analytics Tutorial Environment",
-    "build": {
-        "dockerfile": "Dockerfile",
-        "context": "."
+  "name": "Python Analytics Tutorial Environment",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": "."
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "lts"
     },
-    "features": {
-        "ghcr.io/devcontainers/features/node:1": {
-            "version": "lts"
-        },
-        "ghcr.io/devcontainers/features/git:1": {}
-    },
-    "customizations": {
-        "vscode": {
-            "extensions": [
-                "esbenp.prettier-vscode",
-                "dbaeumer.vscode-eslint",
-                "ms-vscode.vscode-typescript-next",
-                "ms-vsliveshare.vsliveshare",
-                "ms-python.python",
-                "ms-python.vscode-pylance",
-                "ms-toolsai.jupyter"
-            ],
-            "settings": {
-                "editor.formatOnSave": true,
-                "editor.defaultFormatter": "esbenp.prettier-vscode",
-                "editor.tabSize": 4,
-                "python.formatting.provider": "black",
-                "python.linting.enabled": true,
-                "python.linting.pylintEnabled": true
-            }
-        }
-    },
-    "forwardPorts": [3000, 8888],
-    "postCreateCommand": "echo 'Welcome to the Python Analytics tutorial environment!' > README.md"
-} 
+    "ghcr.io/devcontainers/features/git:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+        "ms-vscode.vscode-typescript-next",
+        "ms-vsliveshare.vsliveshare",
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-toolsai.jupyter"
+      ],
+      "settings": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.tabSize": 4,
+        // "python.formatting.provider": "black",
+        "python.linting.enabled": false,
+        "python.linting.pylintEnabled": false
+      }
+    }
+  },
+  "forwardPorts": [3000, 8888],
+  "postCreateCommand": "echo 'Welcome to the Python Analytics tutorial environment!' > README.md"
+}
