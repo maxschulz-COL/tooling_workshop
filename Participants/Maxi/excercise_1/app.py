@@ -8,7 +8,9 @@ df = px.data.gapminder()
 df_2007 = df[df["year"] == 2007]
 
 # Calculate the average life expectancy by continent
-avg_life_exp_by_continent = df_2007.groupby("continent")["lifeExp"].mean()
+avg_life_exp_by_continent = df_2007.groupby(
+    'continent')["lifeExp"].mean()
+
 
 # Print the result
 print(avg_life_exp_by_continent)
